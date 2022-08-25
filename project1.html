@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        max-width: 1100px;
+        background-color: #fed5db;
+        margin: 0 auto;
+        padding-top: 90px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      header {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/041/243/original/71Iq8vTLPeL.png?1658452652");
+        background-repeat: no-repeat;
+        background-size: 80px;
+        background-position: 943px 37px;
+        padding-top: 20px;
+      }
+      header h1 {
+        text-align: center;
+        font-size: 54px;
+        color: #407088;
+      }
+      header p {
+        text-align: center;
+        padding-top: 20px;
+        color: #407088;
+        font-weight: 600;
+      }
+      header button {
+        display: block;
+        margin: 50px auto;
+        border: 1px solid #407088;
+        background: #66bfbf;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        background: white;
+        color: #407088;
+        border: 1px solid #407088;
+      }
+      .category li {
+        width: 250px;
+        padding: 20px;
+        border-radius: 30px;
+        border: 1px solid #407088;
+        text-align: center;
+        margin: 10px;
+        background-color: #407088;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      .category li:hover {
+        background: #66bfbf;
+        border: 1px solid #407088;
+      }
+
+      .category ul {
+        list-style: none;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .category ul a {
+        text-decoration: none;
+        color: white;
+      }
+      .category ul a:hover {
+        text-decoration: underline;
+      }
+      main h2 {
+        text-align: center;
+        color: #407088;
+      }
+      .favourite {
+        max-width: 1024px;
+        margin: 0 auto;
+        background-color: #66bfbf;
+        border-radius: 20px;
+        margin-top: 30px;
+        height: 600px;
+      }
+      .favourite h2 {
+        padding-top: 40px;
+        color: #113f67;
+      }
+      .cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .card1,
+      .card2,
+      .card3 {
+        margin: 0 auto;
+        background: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+        border-radius: 20px;
+        padding: 20px;
+      }
+      .cards a {
+        display: block;
+        text-decoration: none;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #407088;
+      }
+      .cards a:hover {
+        text-decoration: underline;
+      }
+      .cards img {
+        border-radius: 5px;
+      }
+      footer {
+        height: 60px;
+      }
+      footer span {
+        font-size: small;
+        text-align: center;
+        display: block;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <hr />
+        <h1>Delicious recipes for everyone</h1>
+        <p>
+          You don't know what to cook? Answer the questions and we will find a
+          recipe for you!
+        </p>
+        <div class="link"></div>
+        <button>Find the recipe</button>
+        <hr />
+      </header>
+
+      <main>
+        <h2>Do you want to choose yourself? Choose a category</h2>
+        <section class="category">
+          <ul>
+            <li>
+              <a
+                href="https://tatyanaseverydayfood.com/favorite-ukrainian-dinner-recipes/"
+                target="_blank"
+                ><strong>Ukrainian food</strong> 🥟</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.expatica.com/fr/lifestyle/food-drink/top-french-foods-with-recipes-106720/"
+                target="_blank"
+                ><strong>French food</strong> 🥐</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.greatitalianchefs.com/collections/traditional-italian-recipes"
+                target="_blank"
+                ><strong>Italian food</strong> 🍕</a
+              >
+            </li>
+            <li>
+              <a href="https://georgianrecipes.net/" target="_blank"
+                ><strong>Georgian food</strong> 🥘</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://insanelygoodrecipes.com/asian-recipes/"
+                target="_blank"
+                ><strong>Asian food</strong> 🥢</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.feastingathome.com/vegan-dinner-recipes/"
+                target="_blank"
+                ><strong>Vegan</strong> 🥦</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="favourite">
+          <h2>Try this recipies</h2>
+          <br />
+          <div class="cards">
+            <div class="card1">
+              <a href="https://ifoodreal.com/ukrainian-borscht/"
+                ><strong><em>Borscht</em></strong></a
+              >
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/041/247/original/Borscht_served.jpg?1658464016"
+                alt="Borsch"
+                width="200px"
+                height="156px"
+              />
+              <ul>
+                <li>Beets</li>
+                <li>Cabbage</li>
+                <li>Potatoes</li>
+                <li>Carrots</li>
+                <li>Onion</li>
+                <li>Garlic</li>
+                <li>Dill</li>
+                <li>Tomato paste</li>
+                <li>Vinegar und sugar</li>
+                <li>Bay leaves</li>
+                <li>Water or broth</li>
+                <li>Salt and pepper</li>
+              </ul>
+            </div>
+            <div class="card2">
+              <a
+                href="https://whereiscake.com/recipe/ukrainian-vareniki-with-cottage-cheese-cherry/"
+                ><strong><em>Vareniki</em></strong></a
+              >
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/041/250/original/9aa91352e792f145830c61b99571c730_XL.jpg?1658465656"
+                alt="Vareniki"
+                width="200px"
+                height="156px"
+              />
+              <ul>
+                <li>Farmer's Cheese</li>
+                <li>Eggs</li>
+                <li>Flour</li>
+                <li>Salt</li>
+                <li>Oil</li>
+                <li>Water</li>
+              </ul>
+            </div>
+
+            <div class="card3">
+              <a href="https://ukrainian-recipes.com/okroshka.html"
+                ><strong><em>Okroshka</em></strong></a
+              >
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/041/249/original/58443785.jpg?1658465345"
+                alt="Okroshka"
+                width="200px"
+                height="156px"
+              />
+              <ul>
+                <li>Potatoes</li>
+                <li>Eggs</li>
+                <li>Cucumbers</li>
+                <li>Radishes</li>
+                <li>Ham</li>
+                <li>Kefir</li>
+                <li>Salt</li>
+                <li>Spring onion</li>
+                <li>Dill</li>
+                <li>Parsley</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <span>This page is made by Ukrainian girl. #StandWithUkraine 🇺🇦</span>
+      </footer>
+    </div>
+
+    <script>
+      function updateHeading(newHeading) {
+        let heading = document.querySelector("h1");
+        heading.innerHTML = newHeading;
+      }
+
+      function updateParagraph(newParagraph) {
+        let paragraph = document.querySelector("header p");
+        paragraph.innerHTML = newParagraph;
+      }
+
+      function findRecipe() {
+        let name = prompt("What's your name?");
+        let timeOfEat = prompt(
+          "Will it be breakfast, lunch or dinner? Write your answer in one word, please."
+        );
+        timeOfEat = timeOfEat.toLowerCase().trim();
+        if (timeOfEat === "breakfast") {
+          alert(`Ok, ${name}, look what we've choosen for you 👀`);
+          updateHeading(`${name}, try these tasty breakfasts:`);
+          updateParagraph(
+            "American pancakes, Poached eggs with smoked salmon or Carrot cake porridge"
+          );
+        } else if (timeOfEat === "lunch") {
+          alert(`Ok, ${name}, look what we've choosen for you 👀`);
+          updateHeading(`${name}, try these tasty breakfasts:`);
+          updateParagraph(
+            "Scalloped Potato Roll, One-Pot Broccoli Cheddar Soup or Loaded Baked Potato Soup"
+          );
+        } else if (timeOfEat === "dinner") {
+          alert(`Ok, ${name}, look what we've choosen for you 👀`);
+          updateHeading(`${name}, try these tasty breakfasts:`);
+          updateParagraph(
+            "Lemon Chicken, Baked Salmon with Grapefruit Salad or Vegan Chickpea Shakshuka"
+          );
+        } else {
+          alert(
+            `${name}, choose breakfast, lunch or dinner. Write your answer in one word, please.`
+          );
+        }
+      }
+
+      let changeButton = document.querySelector("button");
+      changeButton.addEventListener("click", findRecipe);
+    </script>
+  </body>
+</html>

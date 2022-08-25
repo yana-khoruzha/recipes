@@ -1,0 +1,124 @@
+.container {
+  max-width: 1100px;
+  background-color: #fed5db;
+  margin: 0 auto;
+  padding-top: 90px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/041/243/original/71Iq8vTLPeL.png?1658452652");
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position: 943px 37px;
+  padding-top: 20px;
+}
+header h1 {
+  text-align: center;
+  font-size: 54px;
+  color: #407088;
+}
+header p {
+  text-align: center;
+  padding-top: 20px;
+  color: #407088;
+  font-weight: 600;
+}
+header button {
+  display: block;
+  margin: 50px auto;
+  border: 1px solid #407088;
+  background: #66bfbf;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 22px;
+  padding: 16px 24px;
+  border-radius: 30px;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  cursor: pointer;
+}
+button:hover {
+  background: white;
+  color: #407088;
+  border: 1px solid #407088;
+}
+.category li {
+  width: 250px;
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid #407088;
+  text-align: center;
+  margin: 10px;
+  background-color: #407088;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  cursor: pointer;
+}
+.category li:hover {
+  background: #66bfbf;
+  border: 1px solid #407088;
+}
+
+.category ul {
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.category ul a {
+  text-decoration: none;
+  color: white;
+}
+.category ul a:hover {
+    text-decoration: underline;
+}
+main h2 {
+  text-align: center;
+  color: #407088;
+}
+.favourite {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #66bfbf;
+    border-radius: 20px;
+    margin-top: 30px;
+    height: 600px;
+}
+.favourite h2 {
+    padding-top: 40px;
+    color: #113f67
+}
+.cards {
+    display: flex;
+    justify-content: center;
+}
+.card1, .card2, .card3 {
+    margin: 0 auto;
+    background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    border-radius: 20px;
+    padding: 20px;
+}
+.cards a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #407088;
+}
+.cards a:hover {
+    text-decoration: underline;
+}
+.cards img {
+    border-radius: 5px;
+}
+footer {
+    height: 60px;
+
+}
+footer span {
+    font-size: small;
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+}
