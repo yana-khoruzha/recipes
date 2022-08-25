@@ -1,3 +1,3 @@
 # Recipes
 
-This is homework for the course She Codes. 
+This is a homework for the course She Codes. 
