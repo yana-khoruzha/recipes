@@ -1,3 +1,3 @@
 # Recipes
 
-https://yandapanda19.github.io/Recipes/
+https://glistening-druid-678a8a.netlify.app/
